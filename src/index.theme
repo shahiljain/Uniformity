@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Colloid
 Comment=Flat clean style icon theme for linux.
-Inherits=hicolor,breeze
+Inherits=hicolor,breeze,Adwaita
 Example=folder
 
 # KDE/Plasma Stuff
