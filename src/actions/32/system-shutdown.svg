@@ -4,12 +4,14 @@
    viewBox="0 0 32 32"
    id="svg1"
    sodipodi:docname="system-shutdown.svg"
-   xml:space="preserve"
+   width="32"
+   height="32"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
      id="namedview1"
      pagecolor="#505050"
      bordercolor="#eeeeee"
@@ -18,53 +20,27 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="18.40625"
-     inkscape:cx="15.972835"
-     inkscape:cy="11.599321"
+     inkscape:zoom="24.541667"
+     inkscape:cx="18.825127"
+     inkscape:cy="17.949066"
      inkscape:window-width="1536"
      inkscape:window-height="792"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" /><defs
-     id="defs1"><style
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <style
        id="current-color-scheme"
        type="text/css">.ColorScheme-Text {
         color:#363636;
-      }</style><style
-       id="current-color-scheme-6"
-       type="text/css">.ColorScheme-Text {
-                color:#363636;
-            }</style><style
-       id="current-color-scheme-5"
-       type="text/css">.ColorScheme-Text {
-        color:#363636;
-      }</style></defs><circle
-     cx="16"
-     cy="16"
-     r="15"
-     fill="#f35e5e"
-     fill-rule="evenodd"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     stroke-width="1.0714"
-     id="circle1"
-     style="stroke:#363636;stroke-opacity:0.99215686;fill:none;stroke-width:1;stroke-dasharray:none" /><path
-     d="m22.332 8.2598-0.63281 0.77539a9 9 0 0 1 3.3008 6.9648 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 3.3164-6.9453l-0.63867-0.78125a10 10 0 0 0-3.6777 7.7266 10 10 0 0 0 10 10 10 10 0 0 0 10-10 10 10 0 0 0-3.668-7.7402z"
-     fill="#ffffff"
-     fill-rule="evenodd"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     stroke-width=".95238"
+      }</style>
+  </defs>
+  <path
+     class="ColorScheme-Text"
+     d="m 15.25,4 v 12 h 1.5 V 4 Z M 8.6377,6.53425 C 5.81455,8.71975 4,12.13525 4,16 4,22.648 9.352,28 16,28 22.648,28 28,22.648 28,16 28,12.1351 26.18545,8.71975 23.3623,6.53425 l -0.925785,1.189455 c 2.47125,1.9119 4.0635,4.8942 4.0635,8.2764 0,5.817 -4.683,10.5 -10.5,10.5 -5.817,0 -10.5,-4.683 -10.5,-10.5 0,-3.3822 1.5921,-6.3645 4.0635,-8.2764 z"
+     fill="currentColor"
      id="path1"
-     style="fill:#353535;fill-opacity:0.99215686" /><rect
-     x="15.5"
-     y="6"
-     width="1"
-     height="9"
-     fill="#ffffff"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     stroke-width="54"
-     style="paint-order:stroke fill markers;fill:#353535;fill-opacity:0.99215686"
-     id="rect1" /></svg>
+     style="stroke-width:1.5" />
+</svg>
