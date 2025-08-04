@@ -16,7 +16,7 @@ SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 THEME_NAME=Uniformity
 THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
-SCHEME_VARIANTS=('' '-Nord' '-Dracula' '-Gruvbox' '-Everforest' '-Catppuccin')
+SCHEME_VARIANTS=('' '-Nord' '-Dracula' '-Adwaita' '-Everforest' '-Catppuccin')
 COLOR_VARIANTS=('-Light' '-Dark' '')
 
 themes=()
@@ -30,7 +30,7 @@ cat << EOF
   OPTIONS:
     -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-    -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|gruvbox|everforest|catppuccin|all]
+    -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|Adwaita|everforest|catppuccin|all]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
     -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
     -r, --remove, -u, --uninstall   Remove/Uninstall $THEME_NAME icon themes
@@ -232,34 +232,34 @@ colors_folder() {
     esac
   fi
 
-  if [[ "$scheme" == '-Gruvbox' ]]; then
+  if [[ "$scheme" == '-Adwaita' ]]; then
     case "$theme" in
       '')
-        theme_color='#83a598'
+        theme_color='#a4caee'
         ;;
       -Purple)
-        theme_color='#d386cd'
+        theme_color='#c69ed4'
         ;;
       -Pink)
-        theme_color='#d3869b'
+        theme_color='#e9aeca'
         ;;
       -Red)
         theme_color='#fb4934'
         ;;
       -Orange)
-        theme_color='#fe8019'
+        theme_color='#f5ab7c'
         ;;
       -Yellow)
-        theme_color='#fabd2f'
+        theme_color='#e2c27c'
         ;;
       -Green)
-        theme_color='#b8bb26'
+        theme_color='#9ac8a2'
         ;;
       -Teal)
-        theme_color='#8ec07c'
+        theme_color='#8dc6d0'
         ;;
       -Grey)
-        theme_color='#868686'
+        theme_color='#b5bfc9'
         ;;
     esac
   fi
@@ -368,9 +368,9 @@ while [[ "$#" -gt 0 ]]; do
             echo -e "\nDracula ColorScheme version! ...\n"
             shift
             ;;
-          gruvbox)
+          Adwaita)
             schemes+=("${SCHEME_VARIANTS[3]}")
-            echo -e "\nGruvbox ColorScheme version! ...\n"
+            echo -e "\nAdwaita ColorScheme version! ...\n"
             shift
             ;;
           everforest)
