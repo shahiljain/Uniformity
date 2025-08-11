@@ -65,16 +65,9 @@ install() {
     colors_folder
 
     if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
-      # cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
-      sed -i "s/#bde6fb/${theme_color_bgf}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
-      sed -i "s/#7fcef7/${theme_color_bgb}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
-      sed -i "s/#0e9ce4/${theme_color_sym}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
-      
-      sed -i "s/#bde6fb/${theme_color_bgf}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
-      sed -i "s/#7fcef7/${theme_color_bgb}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
-      sed -i "s/#0e9ce4/${theme_color_sym}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
-
-      
+      cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
+      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
+      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
     fi
 
     cp -r "${SRC_DIR}"/links/*                                                               "${THEME_DIR}"
@@ -147,49 +140,31 @@ install() {
 colors_folder() {
   case "$theme" in
     '')
-      theme_color_bgf='#bde6fb'
-      theme_color_bgb='#7fcef7'
-      theme_color_sym='#0e9ce4'
+      theme_color='#5b9bf8'
       ;;
     -Purple)
-      theme_color_bgf='#d8c4f1'
-      theme_color_bgb='#c1a1e9'
-      theme_color_sym='#935cd8'
+      theme_color='#BA68C8'
       ;;
     -Pink)
-      theme_color_bgf='#fbbde6'
-      theme_color_bgb='#f77fdb'
-      theme_color_sym='#e40ec4'
+      theme_color='#F06292'
       ;;
     -Red)
-      theme_color_bgf='#fdb4b4'
-      theme_color_bgb='#fc8c8c'
-      theme_color_sym='#fa3636'
+      theme_color='#F44336'
       ;;
     -Orange)
-      theme_color_bgf='#fcc8b4'
-      theme_color_bgb='#faaa8a'
-      theme_color_sym='#f76d37'
+      theme_color='#FB8C00'
       ;;
     -Yellow)
-      theme_color_bgf='#fae6ac'
-      theme_color_bgb='#f7d570'
-      theme_color_sym='#dda70b'
+      theme_color='#FFD600'
       ;;
     -Green)
-      theme_color_bgf='#86e6c2'
-      theme_color_bgb='#5fddad'
-      theme_color_sym='#2ac88d'
+      theme_color='#66BB6A'
       ;;
     -Teal)
-      theme_color_bgf='#b8f6f0'
-      theme_color_bgb='#72e1d3'
-      theme_color_sym='#0fb8a4'
+      theme_color='#4DB6AC'
       ;;
     -Grey)
-      theme_color_bgf='#dcdcdc'
-      theme_color_bgb='#bbbbbb'
-      theme_color_sym='#797979'
+      theme_color='#888888'
       ;;
   esac
 
