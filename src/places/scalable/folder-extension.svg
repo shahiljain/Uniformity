@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64" height="64" version="1.1" viewBox="0 0 64 64" id="svg6" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs2">
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
+      color:#333333;
+    }
+    .ColorScheme-Highlight {
+      color:#60c0f0;
+    }</style>
+    <filter style="color-interpolation-filters:sRGB;" id="filter94" x="-0.093567251" y="-0.059094396" width="1.1871345" height="1.1181888">
+      <feFlood result="flood" in="SourceGraphic" flood-opacity="0.196078" flood-color="rgb(0,0,0)" id="feFlood93"/>
+      <feGaussianBlur result="blur" in="SourceGraphic" stdDeviation="1.000000" id="feGaussianBlur93"/>
+      <feOffset result="offset" in="blur" dx="0.000000" dy="0.000000" id="feOffset93"/>
+      <feComposite result="comp1" operator="in" in="flood" in2="offset" id="feComposite93"/>
+      <feComposite result="comp2" operator="over" in="SourceGraphic" in2="comp1" id="feComposite94"/>
+    </filter>
+    <filter style="color-interpolation-filters:sRGB;" id="filter96" x="-0.052710783" y="-0.067002503" width="1.1054216" height="1.134005">
+      <feFlood result="flood" in="SourceGraphic" flood-opacity="0.196078" flood-color="rgb(0,0,0)" id="feFlood94"/>
+      <feGaussianBlur result="blur" in="SourceGraphic" stdDeviation="1.000000" id="feGaussianBlur94"/>
+      <feOffset result="offset" in="blur" dx="0.000000" dy="0.000000" id="feOffset94"/>
+      <feComposite result="comp1" operator="in" in="flood" in2="offset" id="feComposite95"/>
+      <feComposite result="comp2" operator="over" in="SourceGraphic" in2="comp1" id="feComposite96"/>
+    </filter>
+  </defs>
+  <g id="g100" transform="matrix(1.2325781,0,0,1.2325781,-226.53821,25.124705)">
+    <path id="path11" style="opacity:1;fill:#7fcef7;fill-opacity:1;stroke-width:7.5258;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter94)" d="m 189.564,-14.728516 a 2.5742207,3.3529383 0 0 0 -2.57572,3.353706 v 33.905575 a 2.574233,3.3529541 0 0 0 2.57572,3.353706 h 23.07428 V -8.2960301 h -0.0254 v -1.1464995 l -5.31718,-5.2859864 z"/>
+    <path id="path49" style="opacity:1;fill:#bde6fb;fill-opacity:1;stroke-width:9.15681;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter96)" d="m 212.18968,-9.9350854 -4.76368,4.7636706 h 25.09376 v -2.246093 a 2.5639,2.5163627 0 0 0 -2.56446,-2.5175776 z m -22.6375,4.7638676 h 42.96703 V 23.320572 a 2.5639,2.5639 0 0 1 -2.5639,2.5639 H 189.55219 A 2.563912,2.563912 0 0 1 186.98828,23.32056 V -2.6073178 a 2.5639,2.5639 0 0 1 2.5639,-2.5639 z"/>
+  </g>
+  <path d="M 48.98 52 L 45.8 52 C 45.36 52 45 51.64 45 51.2 L 45 49.96 C 45 49.58 44.84 49.21 44.57 48.94 C 44.22 48.61 43.71 48.42 43.19 48.43 C 42.23 48.45 41.43 49.29 41.43 50.26 L 41.43 51.2 C 41.43 51.64 41.07 52 40.62 52 L 37.48 52 C 36.11 52 35 50.89 35 49.52 L 35 46.38 C 35 45.93 35.36 45.57 35.8 45.57 L 37.04 45.57 C 37.45 45.57 37.85 45.4 38.16 45.08 C 38.51 44.73 38.71 44.25 38.71 43.75 C 38.69 42.8 37.91 42 37 42 L 35.8 42 C 35.36 42 35 41.64 35 41.2 L 35 38.06 C 35 36.69 36.11 35.57 37.48 35.57 L 39.95 35.57 C 40.15 35.57 40.31 35.41 40.31 35.22 L 40.31 34.93 C 40.31 33.29 41.65 31.97 43.28 32 C 44.87 32.03 46.16 33.36 46.16 34.96 L 46.16 35.22 C 46.16 35.41 46.32 35.57 46.51 35.57 L 48.98 35.57 C 50.33 35.57 51.43 36.67 51.43 38.02 L 51.43 40.49 C 51.43 40.69 51.59 40.85 51.79 40.85 L 52.04 40.85 C 53.67 40.85 55 42.14 55 43.73 C 55 45.37 53.69 46.7 52.08 46.7 L 51.79 46.7 C 51.59 46.7 51.43 46.86 51.43 47.05 L 51.43 49.55 C 51.43 50.91 50.33 52 48.98 52 Z" style="stroke-width: 1; fill: rgb(14, 156, 228);"/>
+</svg>
