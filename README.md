@@ -1,5 +1,8 @@
 ## Uniformity
+
 This is a fork of the Colloid-icon-theme. I am chaning app icons and adding new ones as I go on using linux. This is mostly a personal project but you may add pull requests and I shall review them as and when I can.
+
+
 
 ![1](preview.png?raw=true)
 
@@ -15,6 +18,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
 -h, --help              Show help
 ```
+
 > For example: install teal nord version -> run: `./install.sh -s nord -t teal`
 
 > For more information, run: `./install.sh -h`
