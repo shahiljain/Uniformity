@@ -4,8 +4,7 @@ This is a fork of the Colloid-icon-theme. I am chaning app icons and adding new 
 
 
 
-![1](preview.png?raw=true)
-
+![preview](quicklook.png?raw=true)
 ## Install tips
 
 Usage:  `./install.sh`  **[OPTIONS...]**
@@ -18,11 +17,10 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
 -h, --help              Show help
 ```
+> [!NOTE]
+> Schemes are not perfect currently. Work in Progress.
 
-> For example: install teal nord version -> run: `./install.sh -s nord -t teal`
+For example: install teal nord version -> run: `./install.sh -s nord -t teal`
 
-> For more information, run: `./install.sh -h`
+For more information, run: `./install.sh -h`
 
-![folders](folders.png?raw=true)
-
-![schemes](schemes.png?raw=true)
