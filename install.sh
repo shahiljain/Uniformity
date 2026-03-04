@@ -51,14 +51,14 @@ install() {
     mkdir -p "${THEME_DIR_DARK}"
     mkdir -p "${THEME_DIR_LIGHT}"
 
-    cp -r "${SRC_DIR}"/Uniformity/*                                                               "${THEME_DIR}"
-    cp -r "${SRC_DIR}"/Uniformity-Dark/*                                                          "${THEME_DIR_DARK}"
-    cp -r "${SRC_DIR}"/Uniformity-Light/*                                                         "${THEME_DIR_LIGHT}"
+    cp -r "${SRC_DIR}"/Uniformity/*                                                             "${THEME_DIR}"
+    cp -r "${SRC_DIR}"/Uniformity-Dark/*                                                        "${THEME_DIR_DARK}"
+    cp -r "${SRC_DIR}"/Uniformity-Light/*                                                       "${THEME_DIR_LIGHT}"
 
     # Renaming the Theme in the Index File
     sed -i "s/Uniformity/${2}${3}/g"                                                            "${THEME_DIR}"/index.theme
-    sed -i "s/Uniformity/${2}${3}-Dark/g"                                                       "${THEME_DIR_DARK}"/index.theme
-    sed -i "s/Uniformity/${2}${3}-Light/g"                                                      "${THEME_DIR_LIGHT}"/index.theme
+    sed -i "s/Uniformity-Dark/${2}${3}-Dark/g"                                                  "${THEME_DIR_DARK}"/index.theme
+    sed -i "s/Uniformity-Light/${2}${3}-Light/g"                                                "${THEME_DIR_LIGHT}"/index.theme
 
     # Color Scheme
     colors_folder
@@ -73,25 +73,28 @@ install() {
       sed -i "s/#0e9ce4/${theme_color_sym}/g"                                                   "${THEME_DIR}"/16x16/apps/*.svg
     fi
 
-    cd "${THEME_DIR_DARK}"
-        ln -sf ../"${name}${theme}"/8x8             8x8
-        ln -sf ../"${name}${theme}"/32x32           32x32
-        ln -sf ../"${name}${theme}"/42x42           42x42
-        ln -sf ../"${name}${theme}"/48x48           48x48
-        ln -sf ../"${name}${theme}"/64x64           64x64
-        ln -sf ../"${name}${theme}"/84x84           84x84
-        ln -sf ../"${name}${theme}"/96x96           96x96
-        ln -sf ../"${name}${theme}"/128x128         128x128
+    # Fixing Links
+    if [[ "${theme}" != '' ]]; then
+        cd ${THEME_DIR_DARK}
+            ln -sf ../"${name}${theme}"/8x8             8x8
+            ln -sf ../"${name}${theme}"/32x32           32x32
+            ln -sf ../"${name}${theme}"/42x42           42x42
+            ln -sf ../"${name}${theme}"/48x48           48x48
+            ln -sf ../"${name}${theme}"/64x64           64x64
+            ln -sf ../"${name}${theme}"/84x84           84x84
+            ln -sf ../"${name}${theme}"/96x96           96x96
+            ln -sf ../"${name}${theme}"/128x128         128x128
 
-    cd ${THEME_DIR_LIGHT}
-        ln -sf ../"${name}${theme}"/8x8             8x8
-        ln -sf ../"${name}${theme}"/32x32           32x32
-        ln -sf ../"${name}${theme}"/42x42           42x42
-        ln -sf ../"${name}${theme}"/48x48           48x48
-        ln -sf ../"${name}${theme}"/64x64           64x64
-        ln -sf ../"${name}${theme}"/84x84           84x84
-        ln -sf ../"${name}${theme}"/96x96           96x96
-        ln -sf ../"${name}${theme}"/128x128         128x128
+        cd ${THEME_DIR_LIGHT}
+            ln -sf ../"${name}${theme}"/8x8             8x8
+            ln -sf ../"${name}${theme}"/32x32           32x32
+            ln -sf ../"${name}${theme}"/42x42           42x42
+            ln -sf ../"${name}${theme}"/48x48           48x48
+            ln -sf ../"${name}${theme}"/64x64           64x64
+            ln -sf ../"${name}${theme}"/84x84           84x84
+            ln -sf ../"${name}${theme}"/96x96           96x96
+            ln -sf ../"${name}${theme}"/128x128         128x128
+    fi
 }
 
 colors_folder() {
@@ -227,10 +230,10 @@ if [[ "${#themes[@]}" -eq 0 ]]; then
 fi
 
 clean_old_theme() {
-  for theme in '' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-teal' '-grey'; do
-        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}${scheme}"
-        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}${scheme}"-Dark
-        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}${scheme}"-Light
+  for theme in "${themes[@]}"; do
+        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}"
+        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}-Dark"
+        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}-Light"
     done
 }
 
@@ -246,3 +249,5 @@ install_theme
 
 
 gtk-update-icon-cache -f -t "${DEST_DIR}/${THEME_NAME}${theme}"
+gtk-update-icon-cache -f -t "${dest:-${DEST_DIR}}/${name:-${THEME_NAME}}${theme}-Dark"
+gtk-update-icon-cache -f -t "${dest:-${DEST_DIR}}/${name:-${THEME_NAME}}${theme}-Light"
