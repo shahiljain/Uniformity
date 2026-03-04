@@ -60,7 +60,7 @@ install() {
     sed -i "s/Uniformity-Dark/${2}${3}-Dark/g"                                                  "${THEME_DIR_DARK}"/index.theme
     sed -i "s/Uniformity-Light/${2}${3}-Light/g"                                                "${THEME_DIR_LIGHT}"/index.theme
 
-    # Color Scheme
+    # Grabbing the Color Scheme & replacing the colors
     colors_folder
 
     if [[ "${theme}" != '' ]]; then
@@ -97,6 +97,7 @@ install() {
     fi
 }
 
+# Color Scheme (Can be used to add more schemes in the future)
 colors_folder() {
     case "$theme" in
     '')
@@ -147,6 +148,7 @@ colors_folder() {
       esac
 }
 
+# While Loop that grabs the command and sets the variables
 while [[ "$#" -gt 0 ]]; do
   case "${1:-}" in
     -d|--dest)
@@ -225,10 +227,12 @@ while [[ "$#" -gt 0 ]]; do
   esac
 done
 
+# Fallback for when there is no theme selected
 if [[ "${#themes[@]}" -eq 0 ]]; then
   themes=("${THEME_VARIANTS[0]}")
 fi
 
+# Removing old Icons before installing
 clean_old_theme() {
   for theme in "${themes[@]}"; do
         rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}"
@@ -239,6 +243,7 @@ clean_old_theme() {
 
 clean_old_theme
 
+# Running the install command with the variables
 install_theme() {
     for theme in "${themes[@]}"; do
         install "${dest:-${DEST_DIR}}" "${name:-${THEME_NAME}}" "${theme}"
@@ -247,7 +252,7 @@ install_theme() {
 
 install_theme
 
-
+# Updating the icon cache
 gtk-update-icon-cache -f -t "${DEST_DIR}/${THEME_NAME}${theme}"
 gtk-update-icon-cache -f -t "${dest:-${DEST_DIR}}/${name:-${THEME_NAME}}${theme}-Dark"
 gtk-update-icon-cache -f -t "${dest:-${DEST_DIR}}/${name:-${THEME_NAME}}${theme}-Light"
