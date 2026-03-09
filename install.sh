@@ -61,7 +61,7 @@ install() {
     	sed -i "s/Uniformity-Light/${2}${3}-Light/g"                                                "${THEME_DIR_LIGHT}"/index.theme
     # Grabbing the Color Scheme & replacing the colors
     colors_folder
-    
+
       sed -i "s/#bde6fb/${theme_color_bgf}/g"                                                   "${THEME_DIR}"/22x22/places/*.svg
       sed -i "s/#7fcef7/${theme_color_bgb}/g"                                                   "${THEME_DIR}"/22x22/places/*.svg
       sed -i "s/#0e9ce4/${theme_color_sym}/g"                                                   "${THEME_DIR}"/22x22/places/*.svg
@@ -71,23 +71,25 @@ install() {
       sed -i "s/#0e9ce4/${theme_color_sym}/g"                                                   "${THEME_DIR}"/16x16/apps/*.svg
 
     # Fixing Links
-        ln -sf ../"${name}${theme}"/8x8             ${THEME_DIR_DARK}/8x8
-        ln -sf ../"${name}${theme}"/32x32           ${THEME_DIR_DARK}/32x32
-        ln -sf ../"${name}${theme}"/42x42           ${THEME_DIR_DARK}/42x42
-        ln -sf ../"${name}${theme}"/48x48           ${THEME_DIR_DARK}/48x48
-        ln -sf ../"${name}${theme}"/64x64           ${THEME_DIR_DARK}/64x64
-        ln -sf ../"${name}${theme}"/84x84           ${THEME_DIR_DARK}/84x84
-        ln -sf ../"${name}${theme}"/96x96           ${THEME_DIR_DARK}/96x96
-        ln -sf ../"${name}${theme}"/128x128         ${THEME_DIR_DARK}/128x128
+    cd ${THEME_DIR_DARK}
+        ln -sf ../"${name}${theme}"/8x8
+        ln -sf ../"${name}${theme}"/32x32
+        ln -sf ../"${name}${theme}"/42x42
+        ln -sf ../"${name}${theme}"/48x48
+        ln -sf ../"${name}${theme}"/64x64
+        ln -sf ../"${name}${theme}"/84x84
+        ln -sf ../"${name}${theme}"/96x96
+        ln -sf ../"${name}${theme}"/128x128
 
-        ln -sf ../"${name}${theme}"/8x8             ${THEME_DIR_LIGHT}/8x8
-        ln -sf ../"${name}${theme}"/32x32           ${THEME_DIR_LIGHT}/32x32
-        ln -sf ../"${name}${theme}"/42x42           ${THEME_DIR_LIGHT}/42x42
-        ln -sf ../"${name}${theme}"/48x48           ${THEME_DIR_LIGHT}/48x48
-        ln -sf ../"${name}${theme}"/64x64           ${THEME_DIR_LIGHT}/64x64
-        ln -sf ../"${name}${theme}"/84x84           ${THEME_DIR_LIGHT}/84x84
-        ln -sf ../"${name}${theme}"/96x96           ${THEME_DIR_LIGHT}/96x96
-        ln -sf ../"${name}${theme}"/128x128         ${THEME_DIR_LIGHT}/128x128
+    cd ${THEME_DIR_LIGHT}
+        ln -sf ../"${name}${theme}"/8x8
+        ln -sf ../"${name}${theme}"/32x32
+        ln -sf ../"${name}${theme}"/42x42
+        ln -sf ../"${name}${theme}"/48x48
+        ln -sf ../"${name}${theme}"/64x64
+        ln -sf ../"${name}${theme}"/84x84
+        ln -sf ../"${name}${theme}"/96x96
+        ln -sf ../"${name}${theme}"/128x128
 }
 
 # Color Scheme (Can be used to add more schemes in the future)
