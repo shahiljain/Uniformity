@@ -18,3 +18,6 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 For example: install teal nord version -> run: `./install.sh -s nord -t teal`
 
 For more information, run: `./install.sh -h`
+
+## Credits
+Handbrake Icon derived from icon by emilrueegg on macosicons.com
