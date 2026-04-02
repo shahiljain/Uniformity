@@ -131,8 +131,8 @@ colors_folder() {
         ;;
         -Green)
         theme_color_bgf='#86e6c2'
-        theme_color_bgb='#5fddad'
-        theme_color_sym='#2ac88d'
+        theme_color_bgb='#42d69f'
+        theme_color_sym='#23a977'
         ;;
         -Teal)
         theme_color_bgf='#b8f6f0'
