@@ -4,7 +4,7 @@
    height="64"
    version="1.1"
    id="svg2"
-   sodipodi:docname="app-template-white.svg"
+   sodipodi:docname="musicbrainz-picard.svg"
    xml:space="preserve"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -21,9 +21,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="3.6801302"
-     inkscape:cx="63.584707"
-     inkscape:cy="24.048062"
+     inkscape:zoom="5.7614419"
+     inkscape:cx="30.547908"
+     inkscape:cy="5.9880843"
      inkscape:window-width="1536"
      inkscape:window-height="835"
      inkscape:window-x="0"
@@ -142,10 +142,11 @@
      height="56.033398"
      x="31"
      y="3.9833012" /><path
-     d="m3.998 18.004v-1c0-7.2032 5.8006-13.004 13.004-13.004h29.996c7.2032 0 13.004 5.8006 13.004 13.004v1c0-7.2033-5.8007-13.002-13.004-13.002h-29.996c-7.2033 0-13.004 5.7988-13.004 13.002z"
+     d="m 3.998,17.9726 v -1 c 0,-7.2032 5.8006,-13.004 13.004,-13.004 h 29.996 c 7.2032,0 13.004,5.8006 13.004,13.004 v 1 c 0,-7.2033 -5.8007,-13.002 -13.004,-13.002 H 17.002 c -7.2033,0 -13.004,5.7988 -13.004,13.002 z"
      fill="#fff"
-     opacity=".5"
-     id="path2" /><path
+     opacity="0.5"
+     id="path2"
+     style="fill:#ffffff;fill-opacity:1;opacity:0.15" /><path
      d="m3.998 45.998v1c0 7.2032 5.8006 13.004 13.004 13.004h29.996c7.2032 0 13.004-5.8006 13.004-13.004v-1c0 7.2033-5.8007 13.002-13.004 13.002h-29.996c-7.2033 0-13.004-5.7988-13.004-13.002z"
      opacity=".1"
      id="path1" /></svg>
