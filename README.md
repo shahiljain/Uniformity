@@ -16,10 +16,20 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -h, --help              Show help
 ```
 
-For example: install teal nord version -> run: `./install.sh -s nord -t teal`
+For example: install blue catppuccin version -> run: `./install.sh -s catppuccin -t blue`
 
 For more information, run: `./install.sh -h`
 
+## Disclaimers
+
+This is a relatively new project and there may be some bugs.
+
+1. Currently for schemes only Catppuccin with Blue Color is available.
+
+2. The command `./install.sh -t all` may have some errors in terms of linking please specify each colour theme separately.
+
 ## Credits
 
-Handbrake Icon derived from icon by emilrueegg on macosicons.com
+Handbrake Icon derived from icon by emilrueegg on [macosicons.com](macosicons.com)
+
+Folder Icons derived from [icons.download](icons.download)
