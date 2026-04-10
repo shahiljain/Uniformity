@@ -12,6 +12,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -d, --dest DIR          Specify destination directory (Default: $HOME/.local/share/icons)
 -n, --name NAME         Specify theme name (Default: Uniformity)
 -t, --theme VARIANTS    Specify folder color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+-s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|catppuccin|all]
 -h, --help              Show help
 ```
 
@@ -20,4 +21,5 @@ For example: install teal nord version -> run: `./install.sh -s nord -t teal`
 For more information, run: `./install.sh -h`
 
 ## Credits
+
 Handbrake Icon derived from icon by emilrueegg on macosicons.com
