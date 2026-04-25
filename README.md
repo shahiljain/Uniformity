@@ -2,7 +2,7 @@
 
 This is a mix of my favourite themes with a bit of my custom work  (Colloid Style Apps + Papirus Style Symbolic Icons + Custom Folders based on Zorin). I am chaning app icons and adding new ones as I go on using linux. This is mostly a personal project but you may add pull requests and I shall review them as and when I can.
 
-![preview](quicklook.png?raw=true)
+![preview](quicklook.svg?raw=true)
 
 ## Install tips
 
