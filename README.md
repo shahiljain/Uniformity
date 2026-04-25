@@ -1,6 +1,11 @@
 ## Uniformity
 
-This is a mix of my favourite themes with a bit of my custom work  (Colloid Style Apps + Papirus Style Symbolic Icons + Custom Folders based on Zorin). I am chaning app icons and adding new ones as I go on using linux. This is mostly a personal project but you may add pull requests and I shall review them as and when I can.
+This is a mix of my favourite themes with a bit of my custom work  
+1. [Colloid](https://github.com/vinceliuice/Colloid-icon-theme) Style Apps 
+2. [Papirus}(https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) Style Symbolic Icons
+3. Custom Folders based on [Zorin](https://github.com/ZorinOS/zorin-icon-themes) 
+
+A majority of this theme exists because of the hard work of the devs and contributors on the above mentioned repos, I have combined what I like about each and will work on refining what I have created in my way. If you have any icon requests you can create a pr or start a discussion for the same.
 
 ![preview](quicklook.svg?raw=true)
 
@@ -19,6 +24,9 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 For example: install blue catppuccin version -> run: `./install.sh -s catppuccin -t blue`
 
 For more information, run: `./install.sh -h`
+
+## Creating New Icons
+You can use the `templates` folder provided in the repo to create new app and mimetype icons.
 
 ## Disclaimers
 
