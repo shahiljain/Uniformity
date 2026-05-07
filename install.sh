@@ -13,7 +13,7 @@ fi
 SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 THEME_NAME=Uniformity
-THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
+THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Slate')
 SCHEME_VARIANTS=('' '-Catppuccin')
 
 themes=()
@@ -26,7 +26,7 @@ cat << EOF
   OPTIONS:
     -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-    -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+    -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|slate|all] (Default: blue)
     -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|catppuccin|all]
     -h, --help              Show help
 EOF
@@ -139,7 +139,7 @@ colors_folder() {
         theme_color_bgb='#72e1d3'
         theme_color_sym='#0fb8a4'
         ;;
-        -Grey)
+        -Slate)
         theme_color_bgf='#dcdcdc'
         theme_color_bgb='#bbbbbb'
         theme_color_sym='#797979'
@@ -188,7 +188,7 @@ colors_folder() {
               theme_color_bgb='#72e1d3'
               theme_color_sym='#0fb8a4'
               ;;
-              -Grey)
+              -Slate)
               theme_color_bgf='#dcdcdc'
               theme_color_bgb='#bbbbbb'
               theme_color_sym='#797979'
@@ -274,7 +274,7 @@ while [[ "$#" -gt 0 ]]; do
             themes+=("${THEME_VARIANTS[7]}")
             shift
             ;;
-          grey)
+          slate)
             themes+=("${THEME_VARIANTS[8]}")
             shift
             ;;
